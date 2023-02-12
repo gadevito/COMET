@@ -38,3 +38,6 @@ If you’ve already blown through your free OpenAI credits and have moved to pai
   
 # **RUNNIN COMET**:
 streamlit run app.py
+
+# **METRICS**:
+In the 'metrics' folder you can find the python files to calculate COMET metrics: precision, recall and f-scores for Data groupd, Object of interests and Data movements.
