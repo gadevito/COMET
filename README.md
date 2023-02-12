@@ -3,7 +3,7 @@ GPT-3 COSMIC Measurement Tool
 
 This app requires python 3.
 
-**SETUP**
+# **SETUP**
 # Step 1: Set up virtual environment and install packages
 Here is the command to make a virtual environment:
 
@@ -36,5 +36,5 @@ You can press the button that says Create new secret key. Copy the secret key fr
 OPENAI_KEY="<paste-your-key-here-with-quotes>"
 If you’ve already blown through your free OpenAI credits and have moved to paid account, it’s a good idea to set a usage limit. Since we are deploying this app publicly, you want to make sure that you don’t accidentally spend more money than intended.
   
-**RUNNIN COMET**:
+# **RUNNIN COMET**:
 streamlit run app.py
