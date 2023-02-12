@@ -9,21 +9,43 @@ def cosmic_analyze(uc_name, uc_content):
     file = open(filename, 'r')
     lines = file.read()
     file.close()
-    lines = lines + "FP \"" + uc_name+"\"\n"+uc_content+"\nFP: \""+uc_name+"\" measurement:\n"
+    uc_content_s = split_sentences(uc_content)
+    print("FP \"" + uc_name+"\":\n"+uc_content_s+"\n\nFP: \""+uc_name+"\" measurement:\n")
+    lines = lines + "FP \"" + uc_name+"\"\n"+uc_content_s+"\n\nFP: \""+uc_name+"\" measurement:\n"
 
-    print(lines)
+    #print(lines)
 
     try:
-        st.session_state["analysis"] = openai.Completion.create(
+        res = openai.Completion.create(
             model="text-davinci-003",
             prompt=lines,
             temperature=.5,
             max_tokens=1300,
-        )["choices"][0]["text"]
+        )
+        print(res)
+        st.session_state["analysis"] = res["choices"][0]["text"]
 
     except Exception as e:
         st.write('There was an error =('+str(e)+')')
 
+#
+# split the use case content in atomic sentences
+#
+def split_sentences(sentences):
+    filename = './sinstructions.txt'
+    file = open(filename, 'r')
+    lines = file.read()
+    file.close()
+    lines = lines +sentences+"\n"
+   
+    res = openai.Completion.create(
+            model="text-davinci-003",
+            prompt=lines,
+            temperature=.7,
+            max_tokens=1300,
+        )
+
+    return res["choices"][0]["text"]
 
 #
 # PRINT the COSMIC Analysis in a table
@@ -43,9 +65,20 @@ def print_analysis(lines):
     messages = 0
     isMsg = False
     total = 0
-
+    k = 0
+    if( len(lines)>3):
+        if(len(lines[0].lstrip()) == 0):
+            lines.remove(0)
+            
+    if len(lines) >3 and lines[0].startswith('Triggering Event: '):
+        st.subheader(lines[0])
+        st.subheader(lines[1])
+        st.subheader(lines[2])
+        lines_r = lines[3:len(lines)]
+    else:
+        lines_r = lines
     # Parsing GPT-3 response lines
-    for i in lines:
+    for i in lines_r:
         l = parseGPTResponse(i)
         # If the error/conf messages has been already counted, we must exclude it
         if i.endswith('Exit. It must be counted only once.'):
