@@ -5,15 +5,15 @@ This app requires python 3.
 
 ## Introduction
 
-The COMET repository provides the proof of concept of the COMET tool. The repository is organized into several directories:
+The COMET repository is organized into several directories:
 
 | Directory                       | Description                                                                                                                |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [`datasets`]                 | Contains the datasets used for the empirical evaluation. |
-| [`FLAM`]       | Contains the source code used to fine-tune the hyperparameters of GPT-4 using the GridSearchCV algorithm.              |
-| [`COMET`]                | Contains the COMET tool sources. |
-| [`results`]                | Contains the COMET empirical evaluation results. |
-| [`metrics`]                | Contains the source code to compute the COMET metrics. |
+| [`datasets`]  | Contains the datasets used for the empirical evaluation. |
+| [`FLAM`]  | Contains the source code used to fine-tune the hyperparameters of GPT-4 using the GridSearchCV algorithm.              |
+| [`COMET`] | Contains the COMET tool sources. |
+| [`results`]   | Contains the COMET empirical evaluation results. |
+| [`metrics`]   | Contains the source code to compute the COMET metrics. |
 
 ## Datasets
 The `datasets` directory contains the datasets used for the the empirical evaluation of the COMET approach. The folder contains the following subfolders:
