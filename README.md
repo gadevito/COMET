@@ -35,6 +35,27 @@ The `testSplit.py` script execute the GridSearchCV algorithm using the `test set
 The `testAnalysis.py` script execute the GridSearchCV algorithm using the `test set` (described int the [Project dataset](#datasets) section) to fine-tune the hyperparameters for the COSMIC Analyzer component. It produces the analysis.log file in the ./log folder if executed.
 Please, follow the SETUP instructions before running the scripts.
 
+## COMET Tool
+The `COMET` directory contains the source code of the COMET Web tool. The `app.py` script run the web application. 
+Please, follow the SETUP instructions before running the scripts.
+
+## Results
+The `results` directory contains the results of the empirical evaluation of the COMET approach. 
+It contains the following files:
+- `MIS.xlsx`, contains the results for the evaluation of the ALBERGATE application.
+- `IoT Microservices.xlsx`, contains the results for the evaluation of the Microservices applications.
+- `Realtime.xlsx`, contains the results for the evaluation of the Realtime applications.
+- `AI.xlsx`, contains the results for the evaluation of the U-CARE application.
+- `Summary.xlsx`, contains the summary of the results.
+
+## Metrics
+The `metrics` directory contains the source code used to evaluate the 1-Rouge and BLEU metrics for the analyzed use case models.
+It contains the following folders:
+- ALBERGATE
+- Iot microservices
+- Realtime
+- U-CURE
+
 # **SETUP**
 # Step 1: Download the repository
 Download the COMET repository and go to the COMET directory. 
