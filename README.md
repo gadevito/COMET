@@ -9,14 +9,14 @@ The COMET repository provides the proof of concept of the COMET tool. The reposi
 
 | Directory                       | Description                                                                                                                |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [`project-dataset`]                 | Contains the datasets used for the empirical evaluation. |
+| [`datasets`]                 | Contains the datasets used for the empirical evaluation. |
 | [`FLAM`]       | Contains the source code used to fine-tune the hyperparameters of GPT-4 using the GridSearchCV algorithm.              |
 | [`COMET`]                | Contains the COMET tool sources. |
 | [`results`]                | Contains the COMET empirical evaluation results. |
 | [`metrics`]                | Contains the source code to compute the COMET metrics. |
 
-## Project dataset
-The `project-dataset` directory contains the datasets used for the the empirical evaluation of the COMET approach. The folder contains the following subfolders:
+## Datasets
+The `datasets` directory contains the datasets used for the the empirical evaluation of the COMET approach. The folder contains the following subfolders:
 - `ALBERGATE`, contains the ALBERGATE use case model, the manual and automatic measurement
 - `AutomaticLineSwitching`, contains the Automatic Line Switching use case model, the manual and automatic measurement
 - `K01726`, contains the FID-MTC use case model, the manual and automatic measurement
@@ -31,8 +31,8 @@ Each sub-folder contains also the directories:
 
 ## GPT-4 Hyperparameters tuning
 The `FLAM` directory contains the source code used to fine-tune the GPT-model hyperparameters. 
-The `testSplit.py` script execute the GridSearchCV algorithm using the `test set` (described int the [Project dataset](#Project dataset) section) to fine-tune the hyperparameters for the Sentence Splitter component. It produces the split.log file in the ./log folder if executed.
-The `testAnalysis.py` script execute the GridSearchCV algorithm using the `test set` (described int the [Project dataset](#Project dataset) section) to fine-tune the hyperparameters for the COSMIC Analyzer component. It produces the analysis.log file in the ./log folder if executed.
+The `testSplit.py` script execute the GridSearchCV algorithm using the `test set` (described int the [Project dataset](#datasets) section) to fine-tune the hyperparameters for the Sentence Splitter component. It produces the split.log file in the ./log folder if executed.
+The `testAnalysis.py` script execute the GridSearchCV algorithm using the `test set` (described int the [Project dataset](#datasets) section) to fine-tune the hyperparameters for the COSMIC Analyzer component. It produces the analysis.log file in the ./log folder if executed.
 Please, follow the SETUP instructions before running the scripts.
 
 # **SETUP**
