@@ -1,1 +1,2 @@
-
+# test set dataset
+The `test set` directory contains the test set used to fine-tune the Sentence Splitter Component (see folder `split`) and the test set used to fine-tune the COSMIC Analyzer Component (see `cosmic analysis` folder).
