@@ -1,0 +1,14 @@
+TCT: US1.003– Display threshold details.
+Description: The actor displays the details of a threshold previously created and associated with a parameter.
+Primary actors: MMG, Relative.
+Pre-conditions
+There is at least a threshold in the database. The main scenario of the us case TCT: US2.001 has been executed.
+Main Scenario
+1.	The actor clicks on "view detail" for a given threshold.
+2.	The system searches for the threshold details.
+3.	The system displays the threshold details in a page with editable fields.
+Alternative flows
+Exceptions
+Reference tables: Table no. 2
+Reference diagrams: Diagram no. 3
+Reference GUI: Omissis

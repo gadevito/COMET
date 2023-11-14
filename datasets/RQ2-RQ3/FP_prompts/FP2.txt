@@ -1,0 +1,21 @@
+TCT: US1.002 – Insert threshold
+Description: The actor insert thresholds associated with a parameter.
+Primary actors: MMG, Relative.
+Pre-conditions
+The main scenario of the use case TCT: US2.001 has been executed.
+Main Scenario
+1.	The actor clicks on "add threshold".
+2.	The system shows an interface with fields to be filled out.
+3.	The actor fills out the fields and clicks on "save".
+4.	The system saves the set threshold and displays it in the list.
+Alternative flows
+Alternative flow no. 01
+1.	At step 3 of the main flow, the actor clicks on "cancel".
+2.	The system closes the threshold creation interface and displays the list of thresholds associated with the selected parameter unchanged.
+Exceptions
+Exception no. 01
+1.	The actor in step 3 of the main flow does not fill out either the 'Minimum Threshold' field or the 'Maximum Threshold' field and uses the save functionality.
+2.	The system displays an error message "Please enter at least one threshold".
+Reference Tables: Table no. 2
+Reference Diagrams: Diagram no. 3
+Reference GUI: Omissis

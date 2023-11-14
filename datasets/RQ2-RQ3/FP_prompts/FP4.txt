@@ -1,0 +1,19 @@
+TCT: US1.004 – Update threshold
+Description: The actor modifies a threshold previously defined for a parameter.
+Primary actors: MMG, Relative.
+Pre-conditions
+At least a threshold exists in the database. The main scenario of the use case TCT: US1.003 has been executed.
+Main Scenario
+1.	The actor modifies a field and clicks on save.
+2.	The system saves the changes and displays the updated list of thresholds of the selected parameter.
+Alternative flows
+Alternative flow no. 01
+1.	The actor at step 1 of the main flow clicks on "cancel".
+2.	The system returns to the previous screen.
+Exception
+Exception no. 01
+1.	At step 1 of the main flow, the actor does not fill in either the 'Minimum Threshold' field or the 'Maximum Threshold' field.
+2.	The system displays an error message "Enter at least one threshold".
+Reference tables: Table no. 2
+Reference diagrams: Diagram no. 3
+Reference GUI: Omissis

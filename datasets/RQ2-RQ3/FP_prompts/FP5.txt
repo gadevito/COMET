@@ -1,0 +1,14 @@
+TCT: US1.005– Delete a threshold
+Description: The actor removes a defined threshold for a parameter.
+Primary actors: MMG, Relative.
+Pre-condition
+At least a threshold exists in the database. The main scenario of the use case TCT: US1.003 has been executed.
+
+Main scenario
+1.	The actor clicks on "delete" for the given threshold.
+2.	The system deletes the threshold.
+Alternative flows
+Exceptions
+Reference tables:
+Reference diagrams: Diagram no. 3
+Reference GUI:

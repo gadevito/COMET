@@ -1,0 +1,21 @@
+TCT: US2.001– Access the 'Threshold List' section
+Description: The actor accesses the threshold creation interface of the Telecontrol module. In this section, minimum and/or maximum thresholds for the generation of alerts are set.
+Primary actors: MMG, Relative.
+Pre-conditions
+Main Scenario
+1.	The actor selects the sub-option 'Thresholds'.
+2.	The system displays a form for parameter selection.
+3.	The actor selects a parameter from the list.
+4.	The system searches  for the thresholds related to the given parameter.
+5.	The system shows the threshold list defined for the given parameter.
+Alternative flows
+Alternative flow no. 01
+1.	If in step 3 of the main flow, the actor uses the 'create' feature, the use case TCT: US1.002 - Create threshold is initiated.
+Alternative flow no. 02
+1.	If at step 3 of the main flow the actor uses the functionality of displaying the details of a created threshold, the use case TCT: US1.003- Display the details of a created threshold is started.
+Alternative flow no. 03
+1.	If at step 3 of the main flow the actor uses the 'deletion' function of a created threshold, use case TCT: US1.005 - Delete a threshold is initiated.
+Exceptions
+Reference tables: 
+Reference Diagrams: Diagram no. 3
+Reference GUI: Omissis
