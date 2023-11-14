@@ -1,0 +1,16 @@
+MTC: US3.008– View teleconsultation event details
+Description: The actor views the teleconsultation event details on his (her) agenda. 
+Actors: Specialist, Patient.
+Precondition
+There is a teleconsultation event on the agenda.
+Main scenario
+1.	The actor clicks “View all teleconsultations” to list all today’s teleconsultations.
+2.	The system searches and displays all the teleconsultation for the given date.
+3.	The actor clicks “View teleconsultation event details” relating to the teleconsultation event of his (or her) interest. 
+4.	The system searches and displays the teleconsultation event details.
+5.	The actor browses the results.
+Alternative Flows  
+Exceptions
+Reference Tables: 
+Reference Diagrams: Diagram 8- Use case diagram User Story 3.
+GUI: GUI 11- .

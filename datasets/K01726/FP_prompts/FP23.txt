@@ -1,0 +1,17 @@
+MTC: US4.002– Close a televisit/teleconsultation
+Description: The actor closes the televisit/teleconsultation meeting, specifying the outcome of the event. 
+Actors: Specialist, Family doctor, Patient.
+Precondition
+There is a teleconsulting/televisit going on.
+Main scenario
+1.	The actor whats to close the meeting. 
+2.	The system shows a form with the outcome field for the televist/teleconsultation.
+3.	The actor selects the outcome and presses “Save”.
+4.	The system saves the “executed” event and displays the refreshed agenda. 
+Alterbative flows
+Exceptions
+Exception flow no. 01
+1.	At step 4, the system displays an error message.
+Reference Tables 
+Reference Diagrams: Diagram 9- Use case diagram User Story 4.
+GUI: GUI 12 – .

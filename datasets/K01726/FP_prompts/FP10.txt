@@ -1,0 +1,19 @@
+MTC: US2.005– Edit accepted televist details
+Description: The actor modifies the information relating to a request for an accepted televisit.
+Actors: Family doctor.
+Precondition
+There is an "accepted" televisit request.
+Main scenario
+1.	The user selects “Edit accepted televist details”.
+2.	The system shows a form with the televisit request fields.
+3.	The user modifies the fields of his (her) interest and presses “Save”.
+4.	The system saves the changes and requests the Messanger component to notify the patient. 
+Alternative flows
+Alternative flo no. 01
+1.	The actor in step 3 presses “Cancel”. 
+Exceptions
+Exception flow no. 01
+1.	In step 4, the system shows an error message stating that not all the required fields have been provided.
+Reference Tables: Table 10- .
+Reference Diagrams: Diagram 7- Use case diagram User Story 2.
+GUI:

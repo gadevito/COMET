@@ -1,0 +1,20 @@
+MTC: US1.002–Add a televist request
+Description: The actor adds a televisit request to be sent to his (her) family doctor, entering a reason, other participants, and notes.
+Actors: Patient.
+Precondition
+No televisit request with the status "to be confirmed" exists in the list.
+Main scenario
+1.	The actor selects "New televisit request".
+2.	The system displays a form to fill in the televisit request fields.
+3.	The actor fills in the televisit request fields and presses “Save”.
+4.	The system saves the televisit request with the status “submitted”, and requests the Messanger component to notify the family doctor.
+Alternative flows
+Alternative flow no. 01
+1.	In step 3, the actor presses “Cancel”.
+2.	The system returns to the previous screen.
+Exceptions
+Exception flow no. 01
+1.	The system shows an error message “Insert mandatory fields”.
+Reference Tables: Table 2. .
+Reference diagrams: Diagram 3- Statechart diagram “Televist”, Diagram 6- Use Case diagram User Story 1.
+GUI: GUI 02- .

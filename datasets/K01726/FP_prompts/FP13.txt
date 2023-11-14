@@ -1,0 +1,16 @@
+MTC: US2.008– View televisit event details
+Description: The actor views the detail of a televisit event scheduled in the agenda.
+Actors: Patient, Family doctor.
+Precondition
+There is an “confirmed” televist on the agenda.
+Main scenario
+1.	The actor clicks the “View televisit events” button to view all his (her) televisit events for today on the agenda.
+2.	The system searches all the televisit events and displays today’s events.
+3.	The actor clicks the “View televisit event details” button relating to the televisit event  of his (or her) interest.
+4.	The system searches and displays the televist event details.
+5.	The actor browses the results.
+Alternative flows  
+Exceptions
+Reference Tables: Table 13- .
+Reference diagrams: Diagram 7- Use case diagram User Story 2.
+GUI: GUI 08- .

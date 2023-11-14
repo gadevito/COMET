@@ -1,0 +1,20 @@
+MTC: US1.005– Edit televist request details
+Description: The actor edits a televisit request he sent to his (her) family doctor.
+Actors: Patient.
+Precondition
+There is at least a televisit request with the status "submitted."
+Main scenario
+1.	The actor clicks the sub-option “Edit televisit request details”.
+2.	The system makes editable the televisit request fields.
+3.	The actor fills in the televisit request fields of his (her) interest and presses “Save”.
+4.	The system saves the changes to the televisit request.
+Alternative flows
+Alternative flow no. 01
+1.	In step 3, the actor presses “Cancel”.
+2.	The system returns to the previous screen.
+Exceptions
+Exception flow no. 01
+1.	The system shows an error message “Fill in the mandatory fields”.
+Reference Tables: Table 5- .
+Reference Diagrams: Diagram 6- Use Case diagram User Story 1.
+GUI

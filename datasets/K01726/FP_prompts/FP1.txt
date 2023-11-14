@@ -1,0 +1,19 @@
+MTC: US1.001– View televisits list
+Description: The actor displays the list of televisit requests sent to his family doctor.
+Actors: Patient.
+Precondition 
+Main scenario
+1.	The user selects “View televisits list” for the given patient.
+2.	The system searches the televisits and displays the list of all the televisit requests for the patient.
+3.	The actor browses the results.
+Alternative flows
+Alternative flow no. 01
+1.	In step 3, the user executes the use case MTC: US1.002–Add a televist request.
+Alternative flow no. 02
+1.	In step 3, the user executes the use case MTC: US1.003– Remove a televist request.
+Alternative flow no. 03
+1.	In step 3, the user executes the use case MTC: US1.004– View televist request details.
+Exceptions
+Reference Tables: Table 1- .
+Reference Diagrams: Diagram 6- Use Case diagram User Story 1.
+GUI: GUI 01- .

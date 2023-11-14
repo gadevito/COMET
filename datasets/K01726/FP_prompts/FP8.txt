@@ -1,0 +1,18 @@
+MTC: US2.003– View received televisit details
+Description: The actor displays the details of a televisit request in the list.
+Actors: Family doctor.
+Precondition
+There is a televisit request with any status among those defined.
+Main scenario
+1.	The user clicks the "View televisit request details" button relating to the televisit request of his (or her).
+2.	The system searches the televisit request details and displays a page with the televisit request details.
+3.	The user browses the results.
+Alternative flows
+Alternative flow no. 01
+1.	In step 3, the actor executes the use case MTC: US2.004– Accept a televist request.
+Alternative flow no. 02
+1.	In step 3, the actor executes the use case MTC: US2.005– Edit accepted televist details.
+Exceptions
+Reference Tables: Table 8- .
+Reference Diagrams: Diagram 7- Use case diagram User Story 2.
+GUI:

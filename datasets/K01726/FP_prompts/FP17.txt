@@ -1,0 +1,19 @@
+MTC: US3.004– Edit teleconsultation details
+Description: The actor changes the teleconsultation details, that is “requested” or “accepted”.
+Attori coinvolti: Specialist.
+Precondition
+There is a “requested” or “accepted” teleconsultation.
+Main scenario
+1.	The user selects "Edit teleconsultation details".
+2.	The system shows a form with the teleconsultation fields.
+3.	The actor changes in the teleconsultation fields of his (her) interest and presses “Save”.
+4.	The system saves the changes to the teleconsultation.
+Alternative flows
+Alternative flow no. 01
+1.	In step 4, if the date-time has changed, the system requests the Messanger to process the notification for all the participants.
+Exceptions
+1.	In step 4, the system shows an error message stating that only some of the required fields have been provided. 
+2.	The flow of events resumes at step 2 of the main scenario.
+Reference tables: Table 16- .
+Reference Diagrams: Diagram 8- Use case diagram User Story 3.
+GUI:

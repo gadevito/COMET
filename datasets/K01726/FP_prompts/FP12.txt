@@ -1,0 +1,13 @@
+MTC: US2.007– Reject a televisit event
+Description: The actor refuses to participate in the televisit event on the date and time set by the doctor during the "acceptance" of the request.
+Actors: Patient.
+Precondition
+There is a request for televisit "accepted" by the doctor.
+Main scenario
+1.	The actor clicks "Reject televisit event " relating to the televisit event of his (or her) interest.
+2.	The system saves the televisit request as “rejected” and requests the Messanger to process the doctor’s notification. 
+Alternative flows  
+Exceptions
+Reference Tables: 
+Reference Diagrams: Diagram 7- Use case diagram User Story 2.
+GUI: GUI 06- .

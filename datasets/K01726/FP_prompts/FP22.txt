@@ -1,0 +1,13 @@
+MTC: US4.001– Start a televisit/teleconsultation
+Description: The actor starts the televisit and (or) the teleconsultation on the current date and time.
+Actors: Specialist, Family doctor.
+Precondition
+A teleconsultation (or televisit) event is scheduled on the current date and time.
+Main scenario
+1.	The actor clicks the “Start televisit/teleconsultation” button relating the televisit/teleconsultation of his (or her) interest.
+2.	The system sends the request to the XXX system to start the meeting.
+Alternative flows  
+Exceptions
+Reference Tables: Table 19- .
+Reference Diagrams: Diagram 9- Use case diagram User Story 4.
+GUI:

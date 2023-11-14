@@ -1,0 +1,17 @@
+MTC: US2.001– View televisit request received
+Description: The actor displays the list of televisit requests from his patients.
+Actors: Family doctor.
+Precondition 
+Main scenario
+1.	The actor clicks the "View all my televisit requests" to view all the televisits.
+2.	The system searches and displays all the televisit requests for the given doctor received from his (her) patients.
+3.	The actor navigates the results.
+Alternative flows
+Alternative flow no. 01
+1.	In step 3, the actor executes the use case US2.002 .
+Alternative Flow no. 02
+1.	In step 3, the actor executes the use case US2.003 .
+Exceptions
+Reference Tables: Table 6- .
+Reference Diagrams: Diagram 7- Use case diagram User Story 2.
+GUI: GUI 03: .

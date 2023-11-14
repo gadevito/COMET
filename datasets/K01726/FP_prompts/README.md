@@ -1,1 +1,2 @@
-
+# FID-MTC FP_prompts dataset
+The `FP_prompts` directory contains the FID-MTC functional processes prompts used to test the approach. It contains 23 files, `FP1.txt, FP2.txt, ..., FP23.txt`, which represent the prompt text used for each functional process identified in the use case model.

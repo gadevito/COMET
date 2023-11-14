@@ -1,0 +1,14 @@
+MTC: US3.003– View teleconsultation details
+Description: The actor views teleconsultation details. 
+Actors: Specialist.
+Precondition
+There is a "sent" or "received" teleconsultation with any status among those defined.
+Main scenario
+1.	The user clicks the "View teleconsultation details" button relating to the teleconsultation of his (or her) interest.
+2.	The system searches and displays the teleconsultation details.
+3.	The actor browses the results.
+Alternative Flows  
+Exceptions
+Reference Tables: 
+Reference Diagrams: Diagram 8- Use case diagram User Story 3.
+GUI:

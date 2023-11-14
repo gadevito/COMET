@@ -1,0 +1,18 @@
+MTC: US1.003– Remove a televisit request
+Description: The actor removes a televisit request sent to his (her) family doctor.
+Actors: Patient.
+Precondition
+There is at least one televisit request with the status "submitted."
+Main scenario
+1.	The actor clicks the "Delete request" button for the given televisit request.
+2.	The system asks the user to confirm the operation.
+3.	The actor confirms by clicking the “Confirm” button.
+4.	The system updates the request as “withdrawn”.
+Alternative flows
+Alternative Flow no. 01
+1.	In step 3, the actor does not confirm.
+2.	The system returns to the previous screen.
+Exceptions
+Reference Tables: Table 3- .
+Reference Diagrams: Diagram 3- Statechart diagram “Televist”, Diagram 6- Use Case diagram User Story 1.
+GUI

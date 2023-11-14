@@ -1,0 +1,14 @@
+MTC: US1.004– View televist request details
+Description: The actor displays the details of a televisit request sent to his(her) family doctor.
+Actors: Patient.
+Precondition
+There is at least one televisit request with the status "submitted," "accepted," “confirmed,” "withdrawn," or "rejected."
+Main scenario
+1.	The actor clicks the “view televisit request details” for the televisit request of his (or her) interest.
+2.	The system searches for the televisit request and displays a page with the televisit request details.
+3.	The actor browses the results.
+Alternative Flows 
+Exceptions
+Reference Tables: Table 4- .
+Reference Diagrams: Diagram 6- Use Case diagram User Story 1.
+GUI

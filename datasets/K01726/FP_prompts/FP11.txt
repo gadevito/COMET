@@ -1,0 +1,13 @@
+MTC: US2.006– Accept a televisit event
+Description: The actor agrees to participate in the televisit event on the date and time set by the doctor during the "Acceptance" of the request.
+Actors: Patient.
+Precondition
+There is a request for televisit "accepted" by the doctor.
+Main scenario
+1.	The actor clicks the “Accept televisit event” button relating to the televisit event of his (or her) interest.
+2.	The system saves an event in the doctor's and patient's agendas, updates the televisit request as "confirmed," and sends a link to all the participants via email.
+Alternative flows  
+Exceptions
+Reference Tables: Table 11- .
+Reference Diagrams: Diagram 7- Use case diagram User Story 2, Diagram 3- Statechart diagram “Televist”.
+GUI: GUI 06- .

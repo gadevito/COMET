@@ -1,0 +1,13 @@
+MTC: US3.006– Accept a teleconsultation invitation
+Description: The actor accepts an invitation for a “requested” teleconsultation. 
+Actors: Specialist.
+Precondition
+There is a “requested” teleconsultation. 
+Main scenario
+1.	The actor clicks the “Accept teleconsultation invitation” relating to the teleconsultation of his (her) interest. 
+2.	The system updates the teleconsultation invitation as “accepted” and saves the teleconsultation event on the actor’s agenda. 
+Alternative flows  
+Exceptions
+Reference Tables: Table 18- .
+Reference Diagrams: Diagram 8- Use case diagram User Story 3, Diagram 4- Statechart diagram “Teleconsultation”.
+GUI:

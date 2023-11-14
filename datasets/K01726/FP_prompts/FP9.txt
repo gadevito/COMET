@@ -1,0 +1,17 @@
+MTC: US2.004– Accept a televisit request
+Description: The actor accepts a televisit request received from a patient.
+Actors: Family doctor.
+Precondition
+A "submitted" televisit request exists AND the main scenario of US2.003 has been successfully executed.
+Main scenario
+1.	The actor clicks “Accept televisit request” button relating to the televisit request of his (or her) interest.
+2.	The system saves the televisit request as “accepted” and requests the Messanger component to notify the patient. 
+Alternative flows
+Exceptions
+Exception flow no. 01
+1.	In step 2, the system displays an error message stating that the not all the required fields have been provided. 
+Exception flow no. 02
+1.	In step 2, the system shows an error message stating that an event on the given date-time already exists.
+Reference Tables: Table 9- .
+Reference Diagrams: Diagram 7- Use case diagram User Story 2, Diagram 3- Statechart diagram “Televist”.
+GUI: GUI 05- .

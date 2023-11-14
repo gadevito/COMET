@@ -1,0 +1,18 @@
+MTC: US3.007– Reject a teleconsultation invitation
+Description: The actor rejects a “requested” teleconsultation. 
+Actors: Specialist.
+Precondition
+There is a “requested” teleconsultation. 
+Main scenario
+1.	The actor clicks the “Reject teleconsultation invitation” relating to the teleconsultation invitation of his (her) interest. 
+2.	The system asks the user to confirm the operation.
+3.	The actor clicks the “Confirm” button.
+4.	The system removes the teleconsultation and requests the Messanger component to notify the sender.
+Alternative flows
+Alternative flow no. 01
+1.	In step 3, the actor does not confirm.
+2.	The flow of events ends.
+Exceptions
+Reference Tables: 
+Reference Diagrams: Diagram 8- Use case diagram User Story 3.
+GUI:

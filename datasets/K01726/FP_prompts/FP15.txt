@@ -1,0 +1,23 @@
+MTC: US3.002– Add a teleconsultation
+Description: The actor adds a "teleconsultation" event. When creating the teleconsultation, it is necessary to specify the date and time the event is scheduled, the duration, and at least one participant. Furthermore, entering a diagnostic question and any additional notes is possible.
+Actors: Specialist.
+Precondition 
+Main scenario
+1.	The actor selects “New teleconsultation”.
+2.	The system shows a page with the teleconsultation fields.
+3.	The actor fills in the teleconsultation fields and presses “Save”.
+4.	The system saves the teleconsultation as “requested”, inserts the teleconsultation on the actor’s agenda, and requests the Messanger component to notify all the participants. 
+Alternative flows
+Alternative flow no. 01
+1.	In step 3, the actor clicks the “Cancel” button.
+2.	The flow of events resumes at step 2 of the main scenario.
+Exceptions
+Exception flow no. 01
+1.	In step 4, the system shows an error message stating that not all the required fields have been provided. 
+2.	The flow of events resumes at step 2 of the main scenario.
+Exception flow no. 02
+1.	In step 4, the system shows an error message stating that a televisit already exists at the given date-time.
+2.	The flow of events resumes at step 2 of the main scenario.
+Refenrence Tables: Table 15- .
+Reference Diagrams: Diagram 8- Use case diagram User Story 3, Diagram 4- Statechart diagram “Teleconsultation”.
+GUI: GUI 10- .

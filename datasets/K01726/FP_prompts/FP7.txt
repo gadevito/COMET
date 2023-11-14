@@ -1,0 +1,15 @@
+MTC: US2.002– Reject a televisit request
+Description: The actor rejects a request for televisit received from a patient. When rejecting a request, the actor must specify a reason.
+Actors: Family doctor.
+Precondition
+There is a "submitted" televisit request.
+Main scenario
+1.	The actor selects "Reject televisit request ".
+2.	The system displays a page containing the reason field.
+3.	The actor fills in the reason field for the rejection and presses “Save”.
+4.	The system updates the televisit request as “rejected” and requests the Messanger to process the patient’s notification.
+Alternative flows  
+Exceptions
+Reference Tables: Table 6- , Tabella 7- Respinge richiesta televisita.
+Reference Diagrams: Diagram 7- Use case diagram User Story 2, Diagram 3- Statechart diagram “Televist”.
+GUI: GUI 04- .
