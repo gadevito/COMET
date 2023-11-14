@@ -19,6 +19,7 @@ The COMET repository is organized into several directories:
 The `datasets` directory contains the datasets used for the the empirical evaluation of the COMET approach. The folder contains the following subfolders:
 - `ALBERGATE`, contains the ALBERGATE use case model, the manual and automatic measurement
 - `AutomaticLineSwitching`, contains the Automatic Line Switching use case model, the manual and automatic measurement
+- `K01719`, contains the FID-CPM use case model, the manual and automatic measurement
 - `K01726`, contains the FID-MTC use case model, the manual and automatic measurement
 - `RiseCooker`, contains the Rise cooker use case model,the manual and automatic measurement
 - `U-CURE`, contains the U-CURE use case model, the manual and automatic measurement
@@ -93,7 +94,7 @@ export OPENAI_API_KEY=<paste-your-key-here>
 
 If you’ve already blown through your free OpenAI credits and have moved to paid account, it’s a good idea to set a usage limit. Since we are deploying this app publicly, you want to make sure that you don’t accidentally spend more money than intended.
   
-# **RUNNIN COMET**:
+# **RUNNING COMET**:
 streamlit run app.py
 
 # **METRICS**:
