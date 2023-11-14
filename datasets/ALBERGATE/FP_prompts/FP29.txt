@@ -1,0 +1,41 @@
+ID
+UC-PRE-06.1	Edit reservation
+Description	This function allows the operator (hotel operator or agency operator) to change the given reservation.
+Primary actor	Operator (Hotel operator or Agency operator)
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-PRE-07 has been executed
+AND
+The given reservation status must be “Reserved”.
+Exit condition
+On success	The new reservation services are saved in persistent storage
+Exit condition
+On failure	There new reservation services are not saved in persistent storage
+Priority	Low
+Extension points	N/A 
+Generalization of	N/A
+MAIN SCENARIO
+1	Operator	The user selects the “Edit reservation details”.
+2	System	The system displays a form containing the reservation filters.
+3	Operator	The user fills in the filters.
+4	Operator	The user clicks the “Search Availability” button.
+5	System	The system validates the given filters.
+6	System	The system searches for all rooms of the given type to accommodate the guests.
+7	System	For each room, the system checks if it is in the Commission file in the given date interval.
+8	System	For each room, the system searches for the unbooked dates in the Booked rooms file.
+9	System	The system lists the available rooms 
+10	Operator	The actor presses “Reserve rooms” relating to the rooms of his interest.
+11	System	The system reads from persistent storage the room details and searches for the requestable room services for the selected rooms.
+12	System	The system lists the selected rooms. For each room, the systems lists the requestable services.
+13	Operator	The user presses "Reservation" relating to the reservation details of his interest and confirms.
+14	System	The system updates the customer’s details if needed.
+The system removes the previously Requested Services, the previously Booked Rooms, the previous Children's Ages, and the Reservation header for the previous reservation.
+The system searches for the season configuration in the given interval.
+The system stores the Reservation header. In addition, the system stores the Booked Rooms, for each room saves the Requested Services, and stores the Children's Ages for the reservation.
+15	System	The system displays a confirmation message
+
+Alternative flow no. 1
+10.a1	Operator	The user specifies the number of children.
+11.a1	System	The system presents static drop-down lists to specify every child’s age. The flow of events resumes at step no. 5 of the main scenario.
+
+Exceptions
+11.a1	System	The system shows a system error message.

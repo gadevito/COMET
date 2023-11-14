@@ -1,0 +1,21 @@
+ID
+UC-SOG-05	Print total bill
+Description	This function allows the user to print the total bill.
+Primary actor	Hotel Manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-SOG-4 has been successful executed 
+AND
+The reservation status is “Checked-in”
+Exit condition
+On success	The printed bill is given to the customer
+Exit condition
+On failure	The bill has not been printed
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	User	The user clicks the "Print bill" button regarding the given reservation
+2	System	The system displays the bill (using the information already present on the screen but properly formatting them).
+3	User	The user gives the printed bill to the customer
+Exceptions
+2.a1	System	The system shows an error message.

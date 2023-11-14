@@ -1,0 +1,53 @@
+ID
+UC-SOG-01.1	Check-in 
+Description	This function allows the user to execute guest check-in.
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-PRE-7 has been successful executed 
+Exit condition
+On success	Rooms are assigned to the right guests
+Exit condition
+On failure	Rooms are not assigned to guests
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The user selects the sub-option “check-in”.
+2	System	The system displays a form containing the reservation details.
+3	Hotel manager	The user selects the room of his interest and executes the search.
+4	System	The system searches for the room guests and for each guest the relative details
+5	System	The system lists the guests in the selected room.
+6	Hotel manager	The user clicks “Add guest”
+7	System	The system shows a form to search customers containing the following filters: surname, name, fiscal code
+8	Hotel manager, Operator	The user optionally fills in the filters and executes the search
+9	System	The system searches for customers that meet the search criteria
+10	System	The system displays the list of available customers 
+11	Hotel manager, Operator	The user clicks the "Select" sub-option
+12	System	The system displays a formatted screen for the customer’s details.
+13	Hotel manager	The user optionally enters new values for the customer’s details and selects the room to assign to the customer.
+14	System	The system asks the user to confirm
+15	Hotel manager	The user confirms the assignment
+16	System	The system checks the provided of the customer’s details.
+17	System	The system updates the new customer’s details.
+18	System	The system updates the booked room details, increasing the number of guests by one. Then, it inserts the new guest for the given room and changes the reservation status to “Checked-in.”
+19	System	The system shows a confirmation message
+
+Alternative flow no. 1
+7.a1	Hotel manager	The flow of events resumes at step no. 6 of the main scenario to allow the user to add all guests.
+Exceptions
+5.a1	System	The system shows an error message 
+
+Alternative flow no. 1: UC-SOG-01.2
+1	Hotel manager, Operator	The user fills in the surname, name, date of birth, address, city, email address, fiscal code fields, and optionally the notes field.
+2	Hotel manager, Operator	The user submits the form.
+3	System	The system checks that: the surname and name fields contain at least two characters, the fiscal code field is valid, the date of birth is correct, the email address is valid.
+4	System	The system records the new customer in persistent storage.
+5	System	The flow of events resumes at step no. 5 of the main scenario.
+
+Alternative flow no. 2: UC-SOG-01.2
+7.a1	Hotel manager	The user does not confirm. The flow of events resumes at step no. 3 of the main scenario
+
+Exceptions
+5.a1	System	The system shows an error message.
+6.a2	System	The system shows an error message (i.e., the selected customer already has an assigned room, the information provided is not valid, Etc.)
+6.a3	System	The system shows an error message indicating that there are not enough beds in the room.

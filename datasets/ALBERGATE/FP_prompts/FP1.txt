@@ -1,0 +1,23 @@
+ID
+UC-GES-01.1	Search for rooms 
+Description	This function allows the hotel manager to view the rooms list.
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The hotel manager is logged in 
+Exit condition
+On success	The rooms list is shown to the user
+Exit condition
+On failure	There are no rooms that meet the search criteria
+Priority	High
+Extension points	Step No. 3 - Insert new room
+Step No. 6 - View room details
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The hotel manager selects the sub-option "Rooms"
+2	System	The system shows a form to search rooms by code
+3	Hotel manager	The user optionally fills in the room code to filter the results and executes the search
+4	System	The system searches for rooms that meet the search criteria
+5	System	The system displays the list of rooms that meet the search criteria
+6	Hotel Manager	The Hotel Manager browses the results.
+Exceptions
+5.a1	System	The system shows an error message stating that no results match the search criteria.

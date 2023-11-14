@@ -1,0 +1,23 @@
+ID
+UC-RIS-02.2	View menu category details
+Description	This function allows the hotel manager to view the given menu category details.
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-RIS-02.1 has been executed successfully
+Exit condition
+On success	The menu category details are shown to the Hotel Manager
+Exit condition
+On failure	No menu category with the given ID is available in persistent storage
+Priority	High
+Extension points	Step No. 3 - Edit menu category details
+Step No. 3 – Edit food
+Step No. 3 – Delete food
+Step No. 3 – Add food
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The hotel manager clicks the "View menu category details" button regarding the category of his (or her) interest
+2	System	The system searches for the menu category with the given ID. The system searches for foods associated with the menu category.
+3	System	The system shows the category details: ID, description, and note.
+The system lists foods associated with the given menu category. The list is uneditable.
+Exceptions
+3.a1	System	The system shows an error message stating that no menu category with the given ID is available in persistent storage

@@ -1,0 +1,25 @@
+ID
+UC-PRE-07	View reservation details
+Description	This function allows the user to view the given reservation details.
+Primary actor	Hotel manager, Operator
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-PRE-08 has been successful executed 
+Exit condition
+On success	The reservation details are shown to the user
+Exit condition
+On failure	No reservation for the given ID is available in persistent storage
+Priority	High
+Extension points	Step No. 3 - Edit reservation 
+Step No. 3 – Cancel reservation services
+Step No. 3 – Change reservation status
+Step No. 3 – Check-in
+Step No. 3 - Calculate total bill
+Step No. 3 - Checkout
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager, Operator	The user clicks the "Details" button regarding the reservation of his (or her) interest
+2	System	The system searches for the reservation header with the given ID, the booked rooms, the requested services for every booked room, and the children’s ages.
+3	System	The system shows a page with the reservation details, booked rooms, requested services, and children’s ages.
+Exceptions
+3.a1	System	The system shows an error message stating that no reservation with the given ID is available in persistent storage
+3.b1	System	The system shows a system error message.

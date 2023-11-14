@@ -1,0 +1,23 @@
+ID
+UC-PRE-04.6	Remove commissioned room
+Description	This function allows the hotel manager to remove a commissioned room by a given agency.
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-PRE-04.2 has been executed successfully. 
+Exit condition
+On success	The commissioned room is removed from the persistent storage
+Exit condition
+On failure	The commissioned room is not removed from the persistent storage
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The hotel manager clicks the "Delete room" button on the chosen record
+2	System	The system asks the user to confirm the operation.
+3	Hotel manager	The hotel manager confirms by clicking the “Confirm” button
+4	System	The system removes the commissioned room from persistent storage.
+5	System	The system shows a confirmation message.
+Alternative flow no. 1
+3.a1	Hotel manager	The hotel manager does not confirm the operation. The flow of events ends.
+Exceptions
+5.a1	System	The system shows an error message

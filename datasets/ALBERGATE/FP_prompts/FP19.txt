@@ -1,0 +1,22 @@
+ID
+UC-GES-04.5	Edit rooms and services configuration
+Description	This function allows the hotel manager to edit the rooms and services configuration
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-GES-04.4 has been executed successfully. 
+Exit condition
+On success	The new details are recorded in persistent storage
+Exit condition
+On failure	The new details are not recorded in persistent storage
+Priority	Low
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The hotel manager clicks the sub-option "Edit configuration"
+2	System	The system shows a form with the following editable fields: maximum duration for blocked rooms, infants discount, children discount, and cost of a phone call.
+3	Hotel manager	The hotel manager modifies the fields of his interest and presses the Save button.
+4	System	The system checks that the infants discount, children discounts, and phone call cost are greater or equal to 0, the maximum duration is greater than 0, and records the new rooms and services configuration.
+5	System	The system shows a confirmation message.
+Exceptions
+5.a1	System	The system shows an error message stating that the provided data are not valid.
+5.b1	System	The system shows a system error message.

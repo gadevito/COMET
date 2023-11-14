@@ -1,0 +1,21 @@
+ID
+UC-GES-05.1	View room services
+Description	This function allows the hotel manager to view the services assigned to a given room.
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-GES-01.2 has been successful executed 
+Exit condition
+On success	The services assigned to the given room are shown to the user
+Exit condition
+On failure	There are no services assigned to the given room
+Priority	High
+Extension points	Step No. 4 - Insert new room service
+Step No. 4 - Delete room service
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The hotel manager clicks the "View services" link for the given room
+2	System	The system searches for the assigned services of the given room.
+3	System	The system displays the list of assigned services of the given room
+4	Hotel Manager	The Hotel Manager browses the results.
+Exceptions
+3.a1	System	The system shows an error message stating that no results match the search criteria.

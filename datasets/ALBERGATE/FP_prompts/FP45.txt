@@ -1,0 +1,20 @@
+ID
+UC-RIS-01.8	Print bill
+Description	This function allows the waiter to print the bill for the given order.
+Primary actor	Waiter
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-RIS-01.2 has been executed successfully AND
+The order status is “Prepared”
+Exit condition
+On success	The bill is printed
+Exit condition
+On failure	The bill is not printed
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Waiter	The waiter clicks the "Print bill" button for the current order
+2	System	The system searches the order details and searches for the ordered food.
+3	System	The system prints the order details and the ordered food details.
+Exceptions
+3.a1	System	The system shows an error message

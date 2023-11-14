@@ -1,0 +1,23 @@
+ID
+UC-RIS-01.7	Prepare bill
+Description	The function allows the waiter to calculate the total price and apply a discount for the given order.
+Primary actor	Waiter
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-RIS-01.2 has been executed successfully 
+AND
+The order status is not “Paid”
+Exit condition
+On success	The order is updated with the new total in persistent storage
+Exit condition
+On failure	The order is not updated in persistent storage
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Waiter	The waiter selects the sub-option "billing"
+2	System	The system shows a summary form with the following fields: total price, discount%, and discounted price.
+3	Waiter	The waiter optionally fills in the discount for the order and presses the "Save" button.
+4	System	The system updates the given order.
+8	System	The system shows a confirmation message.
+Exceptions
+8.a1	System	The system shows an error message

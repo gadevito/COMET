@@ -1,0 +1,65 @@
+ID
+UC-PRE-01	Book a room 
+Description	This function allows the operator (hotel operator or agency operator) to book a room
+Primary actor	Operator (Hotel operator or Agency operator)
+Supporting actors	N/A
+Entry Condition	The operator is logged in 
+Exit condition
+On success	The new reservation is saved in persistent storage
+Exit condition
+On failure	The reservation is not saved in persistent storage
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Operator	The user selects the “Book a room” Link
+2	System	  The system displays a form containing the room filters.
+3	Operator	The user fills in the filters.
+4	Operator	The user clicks the “Search Availability” button.
+5	System	The system validates the given filters.
+6	System	The system searches for all rooms of the given type to accommodate the guests.
+7	System	For each room, the system checks if it is in the Commission file in the given date interval.
+8	System	For each room, the system searches for the unbooked dates in the Booked rooms file.
+9	System	The system lists the available rooms 
+10	Operator	The user browses the results.
+11	Operator	The actor clicks the “Reserve rooms” relating to the rooms of his interest.
+12	System	The system reads from persistent storage the room details and searches for the requestable room services for the selected rooms.
+13	System	The system lists the selected rooms and. For each room, the system lists the requestable services.
+14	Operator	The user presses “Reservation” relating to the reservation details of his interest.
+15	System	The system searches for supplements in Configured season file.
+The system lists the reservation details and shows a blank formatted screen to insert the customer's details.
+16	Operator	The user fills in the fiscal code field.
+17	System	The system searches for the customer with the given fiscal code
+18	System	The system displays the customer details: surname, name, date of birth, fiscal code, address, city, email address, notes, currently occupied room and last occupied room.
+19	Hotel manager, Operator	The user clicks the "Select" sub-option
+20	System	The system fills the formatted screen for the customer’s details.
+21	Operator	The user optionally enters the customer’s details.
+22	Operator	The user fills in the selection for the reservation details.
+23	System	The system updates the customer’s details if needed.
+24	System	The system searches for the season configuration in the given interval. The system stores the reservation header.
+In addition, the system stores the booked rooms for the given date interval, then saves the requested services for the booked rooms and saves the children's ages for the reservation.
+25	System	The system shows a confirmation message
+
+
+Alternative flow no. 1
+7.a1	System	The system presents drop-down lists to specify every child’s age. The flow of events resumes at step no. 5 of the main scenario.
+
+Alternative flow no. 1: no customers found with the given fiscal code
+17.a1	Hotel manager, Operator	The user fills in the surname, name, date of birth, address, city, email address, fiscal code fields, and optionally the notes field and submits the form.
+18.a1	System	The system checks that: the surname and name fields contain at least two characters, the fiscal code field is valid, the date of birth is correct, the email address is valid and records the new customer in persistent storage.
+19.a1	System	The flow of events resumes at step no. 19 of the main scenario.
+
+Alternative flow no. 2: the customer requests to cancel the reservation
+13.a1	Operator	The user presses the Close button. The flow of events ends.
+
+Alternative flow no. 3: the customer requests to cancel the reservation after confirming the room
+6.a1	Operator	The user presses the Close button.
+7.a2	System	The flow of events ends.
+
+
+Exceptions
+9.a1	System	The system shows an error message stating that no results have been found.
+9.b1	System	The system shows a system error message.
+18.c1	System	The system shows an error message stating that no customer with the given fiscal code is available in persistent storage.
+25.a1	System	The system shows a system error message.
+12.c1	System	The system shows an error message stating that the selected room(s) is (are) already occupied.
