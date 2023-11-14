@@ -1,0 +1,19 @@
+ID
+UC.1	Remove line 
+Description	This procedure allows to remove a specific line so that it is out of service. if the Work Line is not out of service then it goes out of service, otherwise the Work Line remains out of service.
+Primary actor	CC Panel
+Supporting actors	Switch device
+Entry Condition	The given line is not out of service 
+Exit condition
+On success	The given line is out of service
+Exit condition
+On failure	N/A
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	CC Panel	The CC Panel enters the 'Remove line command' regarding a specific line.
+2	System	The system reads the Work/Back-up Line status.
+3	System	The system writes the new Line status.
+4	Switch device	The system requests the Switch device to process the ‘Remove line’ command.
+5	CC Panel	The CC Panel displays the new Line status.

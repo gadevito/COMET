@@ -1,0 +1,19 @@
+ID
+UC.5	Handle QLCM Line failed
+Description	This procedure handles the QLCM Line failed. if the quality of the Work Line is “degraded” then it will change to “failed”, otherwise, the quality of the Work Line remains unchanged.
+Primary actor	QLCM
+Supporting actors	Switch device, CC Panel
+Entry Condition	The quality if the work line is “degradated”.
+Exit condition
+On success	The line status changes to “Failed”.
+Exit condition
+On failure	N/A
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	QLCM	The QLCM enters the ‘QLMC Line failed’ command regarding a specific line.
+2	System	The system reads the Line status.
+3	System	The system writes the new Line status.
+4	Switch device	The system requests the Switch device to process the ‘Line switch’ command.
+5	CC Panel	The CC Panel displays the new Line status.

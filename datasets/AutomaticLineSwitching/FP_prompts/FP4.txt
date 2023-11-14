@@ -1,0 +1,19 @@
+ID
+UC.4	Conditional Line switch
+Description	This procedure allows to switch a line conditionally. if the Work Line is not out of service and is not of poorer quality than the Backup Line then the Work Line becomes the selected line, otherwise, the selection of the lines remains unchanged.
+Primary actor	CC Panel
+Supporting actors	Switch device
+Entry Condition	The line is not online. 
+Exit condition
+On success	The line is switched.
+Exit condition
+On failure	N/A
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	CC Panel	The CC Panel enters the ‘Conditional switch’ command regarding a specific line.
+2	System	The system reads the Line status.
+3	System	The system writes the new Line status.
+4	Switch device	The system requests the Switch device to process the ‘Conditional switch’ command.
+5	CC Panel	The CC Panel displays the new Line status.
