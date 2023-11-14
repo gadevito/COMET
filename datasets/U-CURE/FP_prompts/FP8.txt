@@ -1,0 +1,14 @@
+Use Case	UC.AI008 - SVC model training
+Description	This function allows the Machine learning engineer to train the model. 
+Primary actor	Machine learning engineer
+Secondary actors	ML Engine
+Entry Condition	The MAIN SCENARIO of UC.AI003 has been executed successfully. 
+Extension points	
+MAIN SCENARIO
+1	Machine learning engineer	The Machine learning engineer clicks “Train” link.
+2	System	The system shows a form containing the following fields: training parameters, dataset. 
+3	Machine learning engineer	The Machine learning engineer fills in the model parameters and presses “Execute”.
+4	System	The system requests the ML Engine to train the model.
+5	ML engine	The ML engine replies with the training results.
+6	System	The system updates the new model status.
+7	System	The system displays the training details (precision, recall and F1-score).

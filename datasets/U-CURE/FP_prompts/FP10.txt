@@ -1,0 +1,12 @@
+Use Case	UC.AI0010 - Patient classification
+Description	This function allows the doctor to classify a new Patient using the SVC model. 
+Primary actor	Doctor
+Secondary actors	ML Engine
+Entry Condition	The user is logged in.
+Extension points	
+MAIN SCENARIO
+1	Doctor	The doctor clicks “Diagnosis” relating to the patient of his (or her) interest.
+3	System	The system searches for the SVC model parameters.
+4	System	The system requests the ML Engine to classify the patient.
+5	ML engine	The ML engine replies with the patient classification.
+6	System	The system displays the patient classification.

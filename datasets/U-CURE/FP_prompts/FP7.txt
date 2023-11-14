@@ -1,0 +1,13 @@
+Use Case	UC.AI007 - Multivariate analysis
+Description	This function allows the Machine learning engineer to execute a multivariate analysis of the selected features. 
+Primary actor	Machine learning engineer
+Secondary actors	ML Engine
+Entry Condition	The MAIN SCENARIO of UC.AI003 has been executed successfully. 
+Extension points	
+MAIN SCENARIO
+1	Machine learning engineer	The Machine learning engineer presses “Multivariate analysis”.
+2	System	The system displays a form to select the features. 
+3	Machine learning engineer	The Machine learning engineer selects the features of his (or her) interest and presses “Execute”.
+4	System	The system requests the ML Engine to process the Multivariate analysis of the selected features.
+5	ML engine	The ML engine replies with the multivariate analysis.
+6	System	The system displays the analysis.

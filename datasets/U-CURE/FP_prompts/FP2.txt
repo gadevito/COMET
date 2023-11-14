@@ -1,0 +1,13 @@
+Use Case	UC.AI002 - List model projects
+Description	This function allows the Machine learning engineer to list all model projects. 
+Primary actor	Machine learning engineer
+Secondary actors	ML Engine
+Entry Condition	The user is logged in. 
+Extension points	-	4. Open project
+MAIN SCENARIO
+1	Machine learning engineer	The Machine learning engineer presses the “List all projects” link to list all projects.
+2	System	The system searches for all projects.
+3	System	The system displays the project list.
+4	Machine learning engineer	The Machine learning engineer navigates the results.
+Exceptions
+3	System	The system displays an error message stating that no data have been retrieved.

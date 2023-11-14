@@ -1,0 +1,20 @@
+Use Case	UC.AI001 - Loading of clinical data
+Description	This function allows the Machine learning engineer to provide the dictionary and the clinical dataset and load it into the ML Engine. 
+Primary actor	Machine learning engineer
+Secondary actors	ML Engine
+Entry Condition	The user is logged in. 
+Extension points	
+MAIN SCENARIO
+1	Machine learning engineer	The Machine learning engineer clicks the suboption “Load dataset”.
+2	System	The system displays a form containing the dataset fields.
+3	Machine learning engineer	The Machine learning engineer fills in the dataset name and other details and presses “Save”.
+4	System	The system saves the new project data.
+5	System	The system requests the ML Engine to process the dataset.
+6	ML engine	The ML engine replies with the EDA.
+7	System	The system displays the EDA details (categorical, continuous, etc.).
+8	Machine learning engineer	The Machine learning engineer fills in the variable of his (or her) interest and presses ‘Transform’.
+9	System	The system requests the ML Engine to process the transformation.
+10	ML engine	The ML engine replies with the transformation.
+11	System	The system displays the transformation details.
+Exceptions
+7	System	The system displays an error message reporting the dataset inconsistency.

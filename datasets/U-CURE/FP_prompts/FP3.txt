@@ -1,0 +1,18 @@
+Use Case	UC.AI003 - Open project
+Description	This function allows the Machine learning engineer to open a project
+Primary actor	Machine learning engineer
+Secondary actors	ML Engine
+Entry Condition	The MAIN SCENARIO of UC.AI002 has been executed successfully. 
+Extension points	-	4. Univariate and bivariate analysis
+-	4. Comparison of categorical features
+-	4. Bivariate analysis of continuous features
+-	4. Multivariate analysis
+-	4. SVC model training
+-	4. Model test
+MAIN SCENARIO
+1	Machine learning engineer	The Machine learning engineer clicks “Open” relating the project of his (or) interest.
+2	System	The system searches the project details.
+3	System	The system displays the project details.
+4	Machine learning engineer	The Machine learning views the project details.
+Exceptions
+3	System	The system displays an error message.

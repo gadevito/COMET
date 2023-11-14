@@ -1,0 +1,12 @@
+Use Case
+	UC.AI006 - Bivariate analysis of continuous features
+Description	This function allows the Machine learning engineer to analyze continuous features. 
+Primary actor	Machine learning engineer
+Secondary actors	ML Engine
+Entry Condition	The MAIN SCENARIO of UC.AI003 has been executed successfully. 
+Extension points	
+MAIN SCENARIO
+1	Machine learning engineer	The Machine learning engineer clicks “Continuous feature analysis” relating the continuous features of his interest.
+2	System	The system sends the features to analyze.
+3	ML engine	The ML engine replies with the analysis.
+4	System	The system displays the analysis.

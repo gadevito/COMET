@@ -1,0 +1,11 @@
+Use Case	UC.AI005 - Comparison of categorical features
+Description	This function allows the Machine learning engineer to compare the categorical features with the diagnostic target. 
+Primary actor	Machine learning engineer
+Secondary actors	ML Engine
+Entry Condition	The MAIN SCENARIO of UC.AI003 has been executed successfully. 
+Extension points	
+MAIN SCENARIO
+1	Machine learning engineer	The Machine learning engineer clicks “Compare categorical features” relating the categorical variables.
+2	System	The system requests the ML Engine to process the features comparison.
+3	ML engine	The ML engine replies with the features comparison.
+4	System	The system displays the features comparison details.

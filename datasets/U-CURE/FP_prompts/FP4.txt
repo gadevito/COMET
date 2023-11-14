@@ -1,0 +1,16 @@
+Use Case	UC.AI004 - Univariate and bivariate analysis
+Description	This function allows the Machine learning engineer to view the univariate and bivariate variables analysis. 
+Primary actor	Machine learning engineer
+Secondary actors	ML Engine
+Entry Condition	The MAIN SCENARIO of UC.AI003 has been executed successfully. 
+Extension points	
+MAIN SCENARIO
+1	Machine learning engineer	The Machine learning engineer clicks “Analyze” relating to the variables to analyze.
+2	System	The system requests the ML Engine to process the analysis.
+3	ML engine	The ML engine replies with the analysis details.
+4	System	The system displays the analysis details.
+5	Machine learning engineer	The Machine learning engineer fills in the variables of his (or her) interest.
+6	Machine learning engineer	The Machine learning engineer presses ‘T-test’.
+6	System	The system requests the ML Engine component to process the t-test.
+7	ML engine	The ML engine replies with the t-test details.
+8	System	The system displays the t-test details.

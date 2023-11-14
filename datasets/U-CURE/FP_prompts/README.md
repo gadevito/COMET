@@ -1,1 +1,2 @@
-
+# U-CURE FP_prompts dataset
+The `FP_prompts` directory contains the U-CURE functional processes prompts used to test the approach. It contains 10 files, `FP1.txt, FP2.txt, ..., FP10.txt`, which represent the prompt text used for each functional process identified in the use case model.
