@@ -1,0 +1,31 @@
+Triggering Event: The Generic user clicks “View diary details” relating to the given patient.
+Functional User: Generic user
+Sub-Processes:
+MAIN SCENARIO:
+1. The Generic user clicks “View diary details” relating to the given patient.
+    FU (Generic user) - DG (Patient ID) - OOI (Patient) - Entry.
+2. The system searches the Clinical diary details.
+    DG (Clinical diary details) - OOI (Clinical diary) - Read.
+3. The system shows a page with the patient’s clinical diary details.
+    DG (Clinical diary details) - OOI (Clinical diary) - Exit.
+4. The Generic user navigates the results.
+    No data movement.
+
+Alternative flows
+Alternative flow no. 01
+2.a1. If in step no. 3 of the main scenario, the actors selects the sub-option ‘Add a note’.
+    No data movement.
+2.a2. Include the use case DIA:US1.002.
+    No data movement.
+
+Alternative flow no. 02
+2.b1. If in step no.3 of the main scenario, the actor selects the sub-option ‘Delete note’.
+    No data movement.
+2.b2. Include the use case DIA:US1.003.
+    No data movement.
+
+Exceptions
+5. Reference tables: Table no. 1
+    No data movement.
+6. GUI: Figure no. 3
+    No data movement.
