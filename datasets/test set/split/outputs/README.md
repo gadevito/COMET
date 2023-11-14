@@ -1,1 +1,2 @@
-
+# Sentence Splitter prompts dataset
+The `outputs` directory contains 4 files, `output1.txt, output1.txt, ..., output1.txt`, which represent the labelled output text used to fine-tune the Sentence Splitter component. Each file corresponds to the prompt file in the `prompts` folder (i.e., output1.txt is the labelled output of the prompt1.txt prompt).
