@@ -1,0 +1,19 @@
+CPM:US2.002–Add a new alert
+Description: The user adds a new alert for the given vital sign in the patient's medical record.
+Actors: Doctor
+Precondition
+1.	The main scenario of CPM:US2.001 has been executed successfully.
+Main scenario
+1.	The user clicks “Add alert”.
+2.	The system shows a form to add a new alert.
+3.	The user fills in the alert fields. 
+4.	The user presses “Save”.
+5.	The system saves the changes.
+6.	The system shows a confirmation message, stating “The new alert has been saved”. The system returns to the results list of configured alerts.
+Alternative flows
+Alternative flow no. 01
+1.	At step 4 of the main scenario, the user presses “Cancel”.
+Exceptions
+Reference Tables: Table 6 
+Reference Diagrams
+GUI: Fig. 6 GUI007

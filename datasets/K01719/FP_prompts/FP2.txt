@@ -1,0 +1,22 @@
+CPM:US1.002– Add a measurement
+Description: The user adds a vital signs measurement to the patient's home medical record.
+Actors: Doctor, nurse, patient, caregiver, social health operator
+Precondition
+Main scenario
+1.	The user clicks "New measurement".
+2.	The system displays a form in which it is possible to select the desired measuring instrument.
+3.	The user selects the desired measuring instrument.
+4.	The system searches for and lists the Vital Parameters with the specified measuring instrument ID.
+5.	The user fills in the fields.
+6.	The user presses the “Save” button.
+7.	The system saves the changes for the new Measurement to the list of measurements for the selected vital parameter.
+8.	The system displays the message "The measurement has been saved correctly". 
+9.	The system displays the refreshed list of measurements with the new measurement.
+Alternative flows
+Alternative flow no. 01
+1.	At step 4 of the main scenario, the user presses the button “Cancel”.
+2.	The system closes the form.
+Exceptions
+Reference table: Table 2 
+References Diagrams
+GUI: Fig. 2 GUI002

@@ -1,0 +1,14 @@
+CPM:US2.003–View alert details
+Description: The user views the details of an alert for a patient's medical record.
+Actors: Doctor
+Preconditions
+1.	The main scenario of CPM:US2.001 has been executed successfully.
+Main scenario
+1.	The user clicks the "View alter details" button relating to the alert of his (or her) interest.
+2.	The system searched for the alert with the given ID.
+3.	The system shows a page with the alert details.
+Alternative flows
+Exceptions
+Reference Tables
+Reference Diagrams
+GUI: Fig. 7 GUI008

@@ -1,0 +1,20 @@
+CPM:US2.004–Edit Alert details
+Description: The user changes the details of a given alert.
+Actors: Doctor
+Precondition
+1.	The main scenario of CPM:US2.001 has been executed successfully
+Main scenario
+1.	The user clicks the sub-option "Edit alter details".
+2.	The system displays a page with the alert fields.
+3.	The user fills in the alert fields.
+4.	The user presses the “Save” button.
+5.	The system saves the changes.
+6.	The system displays a message indicating that the operation was successful.
+Alternative flows
+Alternative flow no. 01
+1.	At step 3 of the main scenario, the user presses “Cancel”.
+2.	The system returns to the results list of configured alerts.
+Exceptions
+Reference Tables: Table 7 
+Reference Diagrams
+GUI: Fig. 7 GUI008

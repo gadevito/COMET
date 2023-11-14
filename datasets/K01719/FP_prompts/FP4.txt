@@ -1,0 +1,16 @@
+CPM:US1.004– Add an automatic measurement
+Description: The user measures vitals using sensors.
+Actors: Patient, Sensor Device, Mobile App
+Precondition
+Main scenario:
+1.	The user uses an instrument from the kit to measure a vital sign.
+2.	The Sensor Device sends the raw data to the Mobile.
+3.	The Mobile App requests the System to save the measurement data.
+4.	The system saves the measurement.
+5.	The system sends the Mobile App the envelope data of the operation.
+6.	The mobile App displays a message to the user to inform him (or her) that the data have been saved.
+Alternative flows
+Exceptions
+Reference Tables: Table 4
+Reference Diagrams
+GUI: Fig. 4

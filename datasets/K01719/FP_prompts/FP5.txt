@@ -1,0 +1,15 @@
+CPM:US2.001– List all alert parameters
+Description: The user selects the "Thresholds" tab, which contains the alerts associated with a desired vital parameter.
+Actors: Doctor
+Precondition:
+1.	The user selects the "Thresholds" in a patient's medical record.
+Main scenario
+1.	The user selects the "List all vitals" button.
+2.	The system searches and displays the list of vitals.
+3.	The user selects the desired vital sign.
+4.	The system searches and displays the list of alerts related to the given vital parameter. The list is sortable by "Name".
+Alternative flows
+Exceptions
+Reference Tables: Table 5 
+Reference Diagrams
+GUI: Fig. 5 GUI005

@@ -1,0 +1,12 @@
+CPM:US1.003– Display the graph of the measurements for a vital parameter
+Description: The user views the graph for vital.
+Actors: Doctor, nurse, Social health operator, caregiver, patient.
+Precondition
+Main scenario:
+1.	The user selects “Display measurement graph for vital” for the given parameter.
+2.	The system searches the Measurements for the given vital parameter and displays the related graph, having the measures on the ordinates, and the date-time on the abscissas.
+Alternative flows
+Exceptions
+Reference Tables: Table 3 
+Reference Diagrams
+GUI: Fig. 3 GUI004

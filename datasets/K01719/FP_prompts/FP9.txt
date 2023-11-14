@@ -1,0 +1,19 @@
+CPM:US2.005–Remove alert
+Description: The user removes an alert from the list of configured alerts. 
+Actors: Doctor
+Precondition
+1.	The main scenario of CPM:US2.001 has been executed successfully.
+Main scenario:
+1.	The user clicks the "Delete alert" button relating to the alert of his (or her) interest.
+2.	The system displays a pop up window to confirm the operation.
+3.	The user confirms.
+4.	The system removes the given alert.
+5.	The system shows the confirmation message “Alert removed”.
+Alternative flows:
+Alternative flow no. 01
+1.	At step 4 of the main scenario, the user does not confirm.
+2.	The system closes the pop up window.
+Exceptions
+Reference Tables
+Reference Diagrams
+GUI

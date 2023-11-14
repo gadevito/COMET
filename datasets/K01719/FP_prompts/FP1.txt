@@ -1,0 +1,17 @@
+CPM:US1.001– View vitals measurements
+Description: The user selects the vitals measurements page, where: there is a list of measurements for each previously configured vital parameter, and accesses the alerting parameters for a patient.
+Actors: Doctor, nurse, social and health workers (only for home records), Caregivers (only for home records), Patient (only for home records)
+Precondition
+Main scenario:
+1.	The user selects the 'View vitals measurements' tab for the given Patient.
+2.	The system searches for the Measurements and displays the result list.
+3.	The actor browses the results. 
+Alternative flows
+Alternative flow no. 01
+1.	If at step 3 of the main scenario, the actor selects the sub-option 'Add a  measurement,' include the use case CPM:US1.002– Add a measurement.
+Alternative flow no. 02
+1.	If at step 3 of the main scenario, the actor selects the ‘display trend,’ include the use case CPM:US1.003– Display the graph of the measurements.
+Exceptions
+Reference tables: Table 1 
+Reference diagrams
+GUI: Fig. 1 GUI001
