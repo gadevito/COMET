@@ -1,0 +1,13 @@
+DIA:US1.003- Delete a note from the clinical diary.
+Description: The user deletes a note previously added to the clinical diary of the patient 
+Actors: Generic user
+Preconditions
+1.	At least one note has been saved in the clinical record of the patient.
+Main scenario
+1.	The Generic user clicks the “Delete” button relating to the note of his (or her) interest.
+2.	The system deletes the clinical note.
+3.	The system shows the confirmation message "The clinical note has been successfully deleted".
+Alternative flows
+Exceptions
+Reference tables: Table no. 3
+GUI: Figure 1 GUI001

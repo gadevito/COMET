@@ -1,0 +1,22 @@
+DIA:US1.001- Display the patient's clinical diary filtered by role
+Descriptions: The user views the care recipient's medical record, filtered based on the role of the logged-in user who requests to view it.
+Actors: Generic user
+Preconditions: 
+1.	A home care medical record has been opened for the patient.
+Main scenario:
+1.	The Generic user selects the “Clinical diary” tab for the given Patient.
+2.	The system searches for the clinical diary details.
+3.	The system displays a page containing the clinical diary filtered based on the role of the logged-in user.
+4.	The Generic user browses the results.
+Alternative flows
+Alternative flow no. 01
+1.	In step no. 3 of the main scenario, the actor selects the sub-option ‘Add a note’, include the use case DIA:US1.002.
+
+Alternative flow no. 02
+1.	If in step no. 3 of the main scenario, the actor selects the sub-option ‘Delete note’, include the use case DIA:US1.003.
+
+Alternative flow no. 03
+1.	If in step no. 3 of the main scenario, the actor selects the sub-option ‘View clinical records’, include the use case DIA:US1.004.
+Exceptions
+Reference tables: Table 1
+GUI: Figure 1 GUI001

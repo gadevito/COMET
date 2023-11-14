@@ -1,0 +1,15 @@
+DIA:US1.002- Add a note
+Descriptions: The user adds a note to the clinical diary of a patient in a home healthcare record
+Actors: Generic user
+Preconditions
+1.	A home care medical record has been created for a patient. 
+Main scenario
+1.	The Generic user clicks “Add note”.
+2.	The system displays a form to add a clinical note.
+3.	The Generic user fills in the note field and presses “Save”.
+4.	The system saves the note.
+5.	The system shows a confirmation message, stating "The clinical note has been saved successfully". 
+Alternative flows
+Exceptions
+Reference Tables: Table no. 2
+GUI: Figure 2 GUI002
