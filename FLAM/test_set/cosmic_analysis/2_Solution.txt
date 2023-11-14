@@ -1,0 +1,16 @@
+Triggering Event: The Generic user clicks “Add note”.
+Functional User: Generic user
+Sub-Processes:
+MAIN SCENARIO
+1. The Generic user clicks “Add note”.
+    No data movement.
+2. The system displays a form to add a clinical note.
+    No data movement.
+3. The Generic user fills in the note field.
+    FU (Generic user) - DG (Note details) - OOI (Note) - Entry.
+4. The Generic user presses “Save”.
+    No data movement.
+5. The system saves the note.
+    DG (Note details) - OOI (Note) - Write.
+6. The system shows a confirmation message, stating "The clinical note has been saved successfully".
+    DG (Messages) – OOI (Message) – Exit. It must be counted only once.
