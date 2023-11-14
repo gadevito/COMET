@@ -1,0 +1,6 @@
+1. The Generic user clicks “View diary details” relating to the given patient.
+2. The system searches the Clinical diary details and shows a page with the patient’s clinical diary details.
+4. The actor selects the "Details" checkbox and presses the "refresh" button.
+5. The system searches for the patient's details
+6. The system shows the patient's details. 
+7. The actor navigates the results.

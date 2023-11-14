@@ -1,1 +1,2 @@
-
+# Sentence Splitter prompts dataset
+The `prompts` directory contains 4 files, `split1.txt, split2.txt, ..., split4.txt`, which represent the prompt text used to fine-tune the Sentence Splitter component.

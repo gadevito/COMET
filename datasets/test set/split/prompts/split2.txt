@@ -1,0 +1,4 @@
+1. The Generic user clicks “Add note”.
+2. The system displays a form to add a clinical note.
+3. The Generic user fills in the note field and presses “Save”.
+4. The system saves the note and shows a confirmation message, stating "The clinical note has been saved successfully".
