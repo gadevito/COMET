@@ -1,0 +1,17 @@
+ID
+UC.1	Start cooking 
+Description	This procedure allows to turn on the Ris Cooker.
+Primary actor	Start Button
+Supporting actors	Cooking Lamp, Heater
+Entry Condition	The Start Button is turned off 
+Exit condition
+On success	The Rise Cooker starts working
+Exit condition
+On failure	N/A
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Start Button	The Start Button sends the Start signal to the system.
+2	System	The System responds sending the ‘Turn ON’ signal to the  Heater.
+3	System	The System sends the 'Turn ON' signal to the Cooking Lamp.

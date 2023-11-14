@@ -1,1 +1,2 @@
-
+# Rice cooker FP_prompts dataset
+The `FP_prompts` directory contains the Rice cooker functional processes prompts used to test the approach. It contains 3 files, `FP1.txt, FP2.txt, and FP3.txt`, which represent the prompt text used for each functional process identified in the use case model.

@@ -1,0 +1,19 @@
+ID
+UC.2	Update Target temperature
+Description	This procedure allows to update the target temperature of the Rise Cooker.
+Primary actor	Timer
+Supporting actors	N/A
+Entry Condition	The Start Button is turned off 
+Exit condition
+On success	The new temperature is set correctly.
+Exit condition
+On failure	N/A
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Timer	The timer ticks after 30 seconds.
+2	Timer	The timer receives the current elapsed time signal.
+3	System	The system gets the cooking mode related to the Current Settings.
+4	System	The system gets the new target temperature related to the Target settings.
+5	System	The system stores the new target temperature related to the Target settings.

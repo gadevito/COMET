@@ -1,0 +1,19 @@
+ID
+UC.3	Check cooker temperature
+Description	This procedure allows to check the cooker temperature and turn on or off the heater.
+Primary actor	Timer, Temperature Sensor
+Supporting actors	Heater
+Entry Condition	The timer ticks every 5 seconds. 
+Exit condition
+On success	The heater is turned on or off.
+Exit condition
+On failure	N/A
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Timer	The timer ticks after 5 seconds.
+2	System	The system gets the current target temperature.
+3	Temperature Sensor	The temperature Sensor sends the actual temperature to the system.
+4	System	The system decides if the heater must be turned on or off.
+5	Heater	The system requests the Heater to process the command.
