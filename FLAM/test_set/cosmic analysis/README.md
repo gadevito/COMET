@@ -1,2 +1,0 @@
-# FIDDIA FP_prompts test set
-The `cosmic analysis` directory contains the FIDDIA functional processes prompts used and the labelled outputs used to fine-tune the LLM's hyperparameters for the COSMIC Analyzer Component.
