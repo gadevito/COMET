@@ -1,0 +1,8 @@
+1. The Doctor selects the sub-option "Diagnoses"
+2. The system searches for all the diagnoses for the given patient.
+3. The system lists the diagnoses.
+4. The Doctor fills in the name, surname and city fields.
+5. The Doctor presses "search".
+6. The system looks for patients using the given parameters.
+7. The system lists the results.
+8. The Doctor navigates the results.

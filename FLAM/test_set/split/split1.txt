@@ -1,0 +1,4 @@
+1. The Generic user selects the “Clinical diary” tab for the given Patient.
+2. The system searches for the clinical diary details.
+3. The system displays a page containing the clinical diary filtered based on the role of the logged-in user.
+4. The Generic user browses the results.
