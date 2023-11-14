@@ -1,0 +1,22 @@
+ID
+UC-GES-04.3	Edit season configuration
+Description	This function allows the hotel manager to edit the given season configuration
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-GES-04.2 has been executed successfully. 
+Exit condition
+On success	The new season configuration details are recorded in persistent storage
+Exit condition
+On failure	The new season configuration details are not recorded in persistent storage
+Priority	Low
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The hotel manager clicks the sub-option "Edit configuration"
+2	System	The system shows a form with the following editable fields: description, start date, end date and supplement.
+3	Hotel manager	The hotel manager modifies the fields of his interest and presses the Save button.
+4	System	The system checks that the season description contains at least three characters, the supplement is greater or equal to 0, the date interval is valid and records the new season configuration details.
+5	System	The system shows a confirmation message.
+Exceptions
+5.a1	System	The system shows an error message stating that the provided data are not valid.
+5.b1	System	The system shows a system error message.

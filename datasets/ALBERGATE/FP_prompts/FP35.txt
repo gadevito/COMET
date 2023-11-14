@@ -1,0 +1,25 @@
+ID
+UC-PRE-04.4	Insert agency
+Description	This function allows the hotel manager to insert a new agency.
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-PRE-04.1 has been executed successfully. 
+Exit condition
+On success	The new agency is recorded in persistent storage
+Exit condition
+On failure	The new agency is not recorded in persistent storage
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The hotel manager clicks the "New agency" button
+2	System	The system shows a form with editable fields: business name, email, contact name, address, city, and VAT number.
+3	Hotel manager	The hotel manager fills in all the fields.
+4	Hotel manager	The hotel manager submits the form.
+5	System	The system checks that all the field values are not null.
+The system checks that the business and contact names contain at least three characters. The system validates the VAT number and email values. Finally, the system calculates the new ID and records the new agency details.
+6	System	The system shows a confirmation message.
+Exceptions
+6.a1	System	The system shows an error message stating that the provided data are not valid.
+7.b1	System	The system shows an error message stating that the provided business name already exists in persistent storage
+7.c1	System	The system shows a system error message.

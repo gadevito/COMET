@@ -1,0 +1,24 @@
+ID
+UC-RIS-02.8	Insert food
+Description	This function allows the hotel manager to add new food to the given category.
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-RIS-02.2 has been executed successfully. 
+Exit condition
+On success	The new food is recorded in persistent storage
+Exit condition
+On failure	The new food is not recorded in persistent storage
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The hotel manager clicks the "Add food" button
+2	System	The system shows a form with the following editable fields: food, description, price, and available.
+3	Hotel manager	The hotel manager fills in the food, description, price fields, and optionally the available field.
+4	Hotel manager	The hotel manager submits the form.
+5	System	The system checks that the food and description contain at least three characters and that price is greater than or equal to 0, and records the new details of the food associated with the given category in persistent storage.
+6	System	The system shows a confirmation message.
+Exceptions
+6.a1	System	The system shows an error message stating that the provided data are not valid.
+7.b1	System	The system shows an error message stating that the provided food already exists in persistent storage
+7.c1	System	The system shows a system error message.

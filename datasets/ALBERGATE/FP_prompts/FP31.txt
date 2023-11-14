@@ -1,0 +1,22 @@
+ID
+UC-PRE-08	List customer’s reservations
+Description	This function allows the user to list the customer’s reservations.
+Primary actor	Hotel Manager, Operator
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-GES-03.2 has been successful executed
+Exit condition
+On success	There are no reservations available for the given customer 
+Exit condition
+On failure	N/A
+Priority	Medium
+Extension points	Step no. 6 – View reservation details
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel Manager, Operator	The user clicks the "Reservations" link.
+2	System	The system shows a form to filter the reservations by ID and/or date interval and/or status
+3	Hotel Manager, Operator	The user optionally fills in the filter details and presses the “Search” button.
+4	System	The system searches for the Reservation details for the customer’s fiscal code.
+5	System	The system lists the customer’s reservation details.
+6	Hotel Manager, Operator	The user browses the results.
+Exceptions
+5.a1	System	The system shows an error message stating that no results match the search criteria.

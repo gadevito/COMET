@@ -1,0 +1,21 @@
+ID
+UC-RIS-02.3	Edit menu category details
+Description	This function allows the hotel manager to edit the given menu category details
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-RIS-02.2 has been successfully executed.
+Exit condition
+On success	The new menu category details are recorded in persistent storage
+Exit condition
+On failure	The new menu category details are not recorded in persistent storage
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The hotel manager clicks the "Edit menu category details" option
+2	System	The system makes editable the following fields: description and note.
+3	Hotel manager	The hotel manager updates the description and (or) the note fields and presses the "Save" button.
+4	System	The system checks that the menu category description contains at least three characters and records the new menu category details.
+5	System	The system displays a message indicating that the operation was successful.
+Exceptions
+5.a1	System	The system shows an error message.

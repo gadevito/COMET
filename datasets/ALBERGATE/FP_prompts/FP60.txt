@@ -1,0 +1,34 @@
+ID
+UC-SOG-06	Room change 
+Description	This function allows the user to change the current customer’s room.
+Primary actor	Hotel Manager, Hotel operator
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-GES-03.2 has been successful executed 
+AND
+The current room reservation status is not “Paid”
+Exit condition
+On success	A new room is assigned to the given customer
+Exit condition
+On failure	The current customer’s room does not change
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	User	The user clicks the "Change room" link for the given customer 
+2	System	The system searches for all rooms of the given type to accommodate the number of guests.
+3	System	For each room, the system checks if it is in the Commission file or if it is in the Booked Room file in the given date interval.
+4	System	The system lists the available rooms.
+5	User	The user selects a new room code for the customer and clicks the “search services” button.
+6	System	The system searches for the assigned services of the new room and looks up the requested services for the old customer’s room.
+7	System	The system shows the selected room details and lists the requested services for the old customer’s room.
+The system lists the assigned services of the new room
+8	User	The user optionally enters the requestable services for the new room
+9	System	The system searches for the customer’s details, changes the currently occupied room code to the selected room code in the Customers file, updates the booked rooms for the given reservation, deletes the requested services for the old booked room, inserts the newly requested services, changes the room code in the Telephone Bill file to the new selected room code. The system updates the total amount for the reservation and the room code in the Room Guest file.
+10	System	The system shows a confirmation message.
+Alternative flow no. 1
+5.a1	User	The user presses the “Close” button. The flow of events ends.
+Exceptions
+3.a1	System	The system shows an error message.
+4.b1	System	The system shows an error message.
+7.c1	System	The system shows an error message.
+10.d1	System	The system shows an error message.

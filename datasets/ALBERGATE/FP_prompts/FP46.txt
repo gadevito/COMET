@@ -1,0 +1,25 @@
+ID
+UC-RIS-01.9	Pay bill
+Description	This function allows the Hotel manager or the waiter to close the bill for the given order.
+Primary actor	Hotel Manager, Waiter
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-RIS-01.2 has been executed successfully AND
+The order status is “Prepared”
+Exit condition
+On success	The order status is updated to “Paid”
+Exit condition
+On failure	The order status is not updated
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	User	The actor clicks the "Pay bill" button for the current order
+2	System	The system asks the user to confirm the operation.
+3	User	The actor confirms by clicking the “Confirm” button
+4	System	The system updates the order status to “Paid.” The system updates the table status to “Free” in the Tables File.
+5	System	The system shows a confirmation message.
+Alternative flow no. 1
+3.a1	User	The user does not confirm the operation. The Flow of events ends.
+Exceptions
+5.a1	System	The system shows an error message stating that the provided order number does not exist in persistent storage
+5.b1	System	The system shows a system error message.

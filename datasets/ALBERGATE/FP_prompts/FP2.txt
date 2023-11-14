@@ -1,0 +1,20 @@
+ID
+UC-GES-01.2	View room details
+Description	This function allows the hotel manager to view the given room details.
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-GES-01.1 has been executed successfully
+Exit condition
+On success	The room details are shown to the Hotel Manager
+Exit condition
+On failure	No room with the given code is available in persistent storage
+Priority	High
+Extension points	Step No. 3 - Edit room details
+Step No. 3 – View room services
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The hotel manager clicks the "View room details" button relating to the room of his (or her) interest
+2	System	The system searches for the room with the given code
+3	System	The system shows a page with the room details: code, description, type, notes, status, view, additional beds and last valid price.
+Exceptions
+3.a1	System	The system shows an error message stating that no room with the given code is available in persistent storage

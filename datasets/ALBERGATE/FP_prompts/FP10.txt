@@ -1,0 +1,25 @@
+ID
+UC-GES-03.2	View customer details
+Description	This function allows the user to view the given customer details.
+Primary actor	Hotel manager, Operator
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-GES-03.1 has been executed successfully. 
+Exit condition
+On success	The customer details are shown to the user
+Exit condition
+On failure	No customer with the fiscal code is available in persistent storage
+Priority	High
+Extension points	Step No. 3 - Edit customer details
+Step No. 3 - Select customer
+Step No. 3 – List customer’s reservations
+Step No. 3 – Telephone bill
+Step No. 3 - View current room services
+Step No. 3 – Room change
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager, Operator	The user clicks the "View customer details" button relating to the customer of his (or her) interest
+2	System	The system searches for the customer with the given fiscal code
+3	System	The system displays the customer details: surname, name, date of birth, fiscal code, address, city, email address, notes, currently occupied room and last occupied room.
+Exceptions
+3.a1	System	The system shows an error message stating that no customer with the given fiscal code is available in persistent storage
+3.b1	System	The system shows a system error message.

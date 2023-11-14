@@ -1,0 +1,23 @@
+ID
+UC-GES-04.4.a	Remove season configuration
+Description	This function allows the hotel manager to remove the given season configuration
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-GES-04.1 has been executed successfully. 
+Exit condition
+On success	The given season configuration has been removed from persistent storage
+Exit condition
+On failure	The given season configuration has not been removed from persistent storage
+Priority	Low
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The hotel manager clicks the "Delete configuration" button relating to the configuration of his (or her) interest 
+2	System	The system asks the user to confirm the operation.
+3	Hotel manager	The hotel manager clicks the “Confirm” button.
+4	System	The system removes the given season configuration from the persistent storage
+5	System	The system shows a confirmation message.
+Alternative flow no. 1
+3	Hotel manager	The hotel manager clicks the “Undo” button. The flow of events ends.
+Exceptions
+5.a1	System	The system shows a system error message.

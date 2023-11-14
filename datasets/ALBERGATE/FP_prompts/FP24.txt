@@ -1,0 +1,21 @@
+ID
+UC-PRE-03.0	Blocked rooms management
+Description	Rooms are blocked at the time of booking and will remain in that state for a certain period set by the hotel manager. After this period, the system shall inform the user that the room has been blocked for too long. Therefore, the user can find out if the delay is due to a customer's mishap or if he (or she) no longer intends to stay in the hotel. Once the customer's deposit has arrived, it must be possible to switch the room from blocked to assigned. In the first case, the blocking of the room will be renewed, while in the second case, the reservation will be canceled. This function inserts in the Blocked Rooms Warnings file the reservations that have to be processed by the Hotel Manager.
+Primary actor	System timer
+Supporting actors	N/A
+Entry Condition	At 00:00 every day
+Exit condition
+On success	The warnings for the blocked rooms are saved.
+Exit condition
+On failure	N/A
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	System timer	The system timer ticks and requests the system to check if there are blocked rooms to process in Rooms and Services Configuration file.
+2	System	The system searches for the maximum amount of time rooms may be blocked in Rooms and Services Configuration file.
+The system looks for reservations with the status "Reserved" or "In progress" booked for more than the maximum length of time.
+3	System	The system empties the Blocked Rooms Warnings file.
+4	System	The system saves the reservations' IDs in the Blocked Rooms Warnings file.
+Alternative flow no. 1
+4	System	No reservations have been found for the search criteria. The flow of events ends.

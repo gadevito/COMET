@@ -1,0 +1,24 @@
+ID
+UC-GES-02.1	Search for services 
+Description	This function allows the hotel manager to view the services list.
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The hotel manager is logged in 
+Exit condition
+On success	The services list is shown to the user
+Exit condition
+On failure	There are no services available
+Priority	High
+Extension points	Step No. 3 - Insert new service
+Step No. 6 - View service details
+Step No. 6 – Select service
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The hotel manager clicks the sub-option "Services"
+2	System	The system shows a form to search services by code
+3	Hotel manager	The user optionally fills in the service code to filter the results and executes the search
+4	System	The system searches for services that meet the search criteria
+5	System	The system displays the list of available services 
+6	System	The Hotel Manager browses the results.
+Exceptions
+5.a1	System	The system shows an error message stating that no results match the search criteria.

@@ -1,0 +1,23 @@
+ID
+UC-GES-02.4	Insert a new service
+Description	This function allows the hotel manager to insert a new service.
+Primary actor	Hotel manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-GES-02.1 has been executed successfully. 
+Exit condition
+On success	The new service is recorded in persistent storage
+Exit condition
+On failure	The new service is not recorded in persistent storage
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager	The hotel manager clicks the "New service" button
+2	System	The system shows a form with the following editable fields: code, description, notes and active price.
+3	Hotel manager	The hotel manager fills in the code, description, and price fields. He (or She) optionally fills in the notes field and submits the form.
+4	System	The system checks that the service code contains at least one character, the service description contains at least three characters, and the service price is greater or equal to 0 and records the new service details.
+5	System	The system shows a confirmation message.
+Exceptions
+5.a1	System	The system shows an error message stating that the provided data are not valid.
+5.b1	System	The system shows an error message stating that the provided code already exists in persistent storage
+5.c1	System	The system shows a system error message.

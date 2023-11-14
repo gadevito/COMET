@@ -1,0 +1,24 @@
+ID
+UC-PRE-05	Cancel reservation
+Description	This function allows the user to cancel a given reservation.
+Primary actor	Hotel manager, Operator
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-PRE-07 has been successfully executed.
+Exit condition
+On success	The reservation details are removed from persistent storage
+Exit condition
+On failure	The reservation has the status "Stayed" or "Finished" and has not been removed.
+Priority	High
+Extension points	N/A
+Generalization of	N/A
+MAIN SCENARIO
+1	Hotel manager, Operator	The user clicks the "Cancel" button for the given reservation ID
+2	System	The system asks the user to confirm
+3	Hotel manager, operator	The user confirms the operation
+4	System	The system removes the Requested Services, the Children’s Ages, and the Booked Rooms and deletes the Reservation header with the given reservation ID.
+5	System	The system shows a confirmation message.
+Alternative flow no. 1
+3.a1	Hotel manager, operator	The user does not confirm the operation. The flow of events ends.
+Exceptions
+5.a1	System	The system shows an error message stating that no reservation with the given ID is available in persistent storage
+5.b1	System	The system shows a system error message.

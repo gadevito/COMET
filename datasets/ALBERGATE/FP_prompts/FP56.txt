@@ -1,0 +1,22 @@
+ID
+UC-SOG-02.1	View current room services
+Description	This function allows the user to list the customer’s current room services.
+Primary actor	Hotel Manager
+Supporting actors	N/A
+Entry Condition	The main scenario of UC-GES-03.2 has been successful executed
+Exit condition
+On success	The requested room services are shown to the user
+Exit condition
+On failure	The given customer has not an assigned room
+Priority	High
+Extension points	Step no. 6 – Add services to current room
+Generalization of	N/A
+MAIN SCENARIO
+1	User	The user selects the sub-option  "List room services".
+2	System	The system shows a form to filter the room services by description
+3	User	The user optionally fills in the filter fields and presses the “Search” button.
+4	System	The system searches for the requested services for the given customer’s room. For each requested service the system looks up the service details.
+5	System	The system lists the currently requested services for the given customer’s room and lists the services details.
+6	User	The user browses the results.
+Exceptions
+5.a1	System	The system shows an error message stating that no results match the search criteria.
