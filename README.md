@@ -12,6 +12,8 @@ The COMET repository is organized into several directories:
 | [`datasets`]  | Contains the datasets used for the empirical evaluation. |
 | [`FLAM`]  | Contains the source code used to fine-tune the hyperparameters of GPT-4 using the GridSearchCV algorithm.              |
 | [`COMET`] | Contains the COMET tool sources. |
+| [`Comparison Research`] | Contains the results of the systematic search on Scopus to identify all articles proposing COSMIC automation tools and identify potential approaches to compare with COMET. |
+| [`deepCOSMIC`] | Contains the experiments with DEEP-COSMIC-UC. |
 | [`results`]   | Contains the COMET empirical evaluation results. |
 | [`metrics`]   | Contains the source code to compute the COMET metrics. |
 
@@ -39,6 +41,21 @@ Please, follow the SETUP instructions before running the scripts.
 ## COMET Tool
 The `COMET` directory contains the source code of the COMET Web tool. The `app.py` script run the web application. 
 Please, follow the SETUP instructions before running the scripts.
+
+## Comparison Research
+The `Comparison Research` directory contains the results of the systematic search we performed on Scopus to identify all articles proposing COSMIC automation tools and identify potential approaches to compare with COMET, which are reported in the `cosmic_SLR.xlsx` file.
+
+## deepCOSMIC
+The `deepCOSMIC` directory contains the replication of `DEEP-COSMIC-UC` and the results of the experiments using it with the COMET datasets.
+@article{ochodek2020deep,
+  title={Deep learning model for end-to-end approximation of COSMIC functional size based on use-case names},
+  author={Ochodek, Miros{\l}aw and Kopczy{\'n}ska, Sylwia and Staron, Miroslaw},
+  journal={Information and Software Technology},
+  volume={123},
+  pages={106310},
+  year={2020},
+  publisher={Elsevier}
+}
 
 ## Results
 The `results` directory contains the results of the empirical evaluation of the COMET approach. 
