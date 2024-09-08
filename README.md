@@ -43,10 +43,10 @@ The `COMET` directory contains the source code of the COMET Web tool. The `app.p
 Please, follow the SETUP instructions before running the scripts.
 
 ## Comparison Research
-The `Comparison Research` directory contains the results of the systematic search we performed on Scopus to identify all articles proposing COSMIC automation tools and identify potential approaches to compare with COMET, which are reported in the `cosmic_SLR.xlsx` file.
+The `Comparison Research` directory contains the results of the systematic search we performed on Scopus to identify all the articles proposing COSMIC automation tools and identify potential approaches to compare with COMET. The results are reported in the `cosmic_SLR.xlsx` file.
 
 ## deepCOSMIC
-The `deepCOSMIC` directory contains the replication of `DEEP-COSMIC-UC` and the results of the experiments using it with the COMET datasets.
+The `deepCOSMIC` directory contains the source code of `DEEP-COSMIC-UC` (see reference below) and the results of the experiments using it with the COMET datasets.
 @article{ochodek2020deep,
   title={Deep learning model for end-to-end approximation of COSMIC functional size based on use-case names},
   author={Ochodek, Miros{\l}aw and Kopczy{\'n}ska, Sylwia and Staron, Miroslaw},
@@ -73,6 +73,7 @@ It contains the following folders:
 - Iot microservices
 - Realtime
 - U-CURE
+- MAE
 
 # **SETUP**
 # Step 1: Download the repository
@@ -115,4 +116,4 @@ If you’ve already blown through your free OpenAI credits and have moved to pai
 streamlit run app.py
 
 # **METRICS**:
-In the 'metrics' folder you can find the python files to calculate COMET metrics: precision, recall and f1-scores for Data groupd, Object of interests, Functional Users, and Data movements.
+In the 'metrics' folder you can find the python files to calculate COMET metrics: precision, recall and f1-scores for Data groupd, Object of interests, Functional Users, and Data movements. You can also find the MAE folder, where there are the necessary code to compute the MAE metrics for COMET and DEEP-COSMIC-UC on the COMET dataset.
