@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "deepcosmic"
+version = "0.1.0"
+description = ""
+authors = ["Gabriele De Vito <gabriele.devito@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+scipy = "<1.13.0"
+numpy ="1.19.5"
+tensorflow = "1.14.0"
+keras ="2.2.4"
+gensim= "3.8.0"
+pandas = "1.1.5"
+protobuf = "<3.21"
+spacy = "3.1.2"
+scikit-learn = "0.24.2" 
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
