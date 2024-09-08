@@ -46,16 +46,7 @@ Please, follow the SETUP instructions before running the scripts.
 The `Comparison Research` directory contains the results of the systematic search we performed on Scopus to identify all the articles proposing COSMIC automation tools and identify potential approaches to compare with COMET. The results are reported in the `cosmic_SLR.xlsx` file.
 
 ## deepCOSMIC
-The `deepCOSMIC` directory contains the source code of `DEEP-COSMIC-UC` (see reference below) and the results of the experiments using it with the COMET datasets.
-@article{ochodek2020deep,
-  title={Deep learning model for end-to-end approximation of COSMIC functional size based on use-case names},
-  author={Ochodek, Miros{\l}aw and Kopczy{\'n}ska, Sylwia and Staron, Miroslaw},
-  journal={Information and Software Technology},
-  volume={123},
-  pages={106310},
-  year={2020},
-  publisher={Elsevier}
-}
+The `deepCOSMIC` directory contains the source code of `DEEP-COSMIC-UC` (Ochodek, Mirosław, Kopczyńska, Sylwia, & Staron, Miroslaw. (2020). Deep learning model for end-to-end approximation of COSMIC functional size based on use-case names. *Information and Software Technology*, 123, 106310. Elsevier) and the results of the experiments using it with the COMET datasets.
 
 ## Results
 The `results` directory contains the results of the empirical evaluation of the COMET approach. 
