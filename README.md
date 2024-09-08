@@ -107,4 +107,4 @@ If you’ve already blown through your free OpenAI credits and have moved to pai
 streamlit run app.py
 
 # **METRICS**:
-In the 'metrics' folder you can find the python files to calculate COMET metrics: precision, recall and f1-scores for Data groupd, Object of interests, Functional Users, and Data movements. You can also find the MAE folder, where there are the necessary code to compute the MAE metrics for COMET and DEEP-COSMIC-UC on the COMET dataset.
+In the 'metrics' folder you can find the python files to calculate COMET metrics: precision, recall and f1-scores for Data groupd, Object of interests, Functional Users, and Data movements. You can also find the MAE folder, where there is the necessary code to compute the MAE metrics for COMET and DEEP-COSMIC-UC on the COMET dataset.
