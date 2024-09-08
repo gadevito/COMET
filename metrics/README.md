@@ -5,3 +5,4 @@ It contains the following folders:
 - Iot microservices
 - Realtime
 - U-CURE
+- MAE
